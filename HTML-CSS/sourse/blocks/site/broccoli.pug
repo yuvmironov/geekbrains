@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+    include ../head/head.pug
+    body
+        include ../__preload/__preload
+        include ../__nav/__nav
+        include ../__header/__header
+        include ../__main/__main
+            include ../__main/__main_broccoli
+
+        include ../__footer/__footer
+
+
+
+        //- Весь вонтент до данного коментария
+        link(rel="stylesheet" type="text/css" href="style.css")
+        //- fontawesome 5
+        script(defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src='site.js')

@@ -1,0 +1,94 @@
+/** 
+* файл index.styl
+**/
+nav,
+menu,
+header,
+body,
+section,
+a,
+ul,
+li,
+p,
+h1,
+h2
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-size: 12px;
+
+    background-color: #f8f8f8;
+}
+.nav
+{
+    width: 100vw;
+    padding: 10px 0;
+
+    border-bottom: 1px solid #000;
+}
+.nav__wrapp
+{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.nav__menu
+{
+    list-style: none;
+}
+.nav__menu-item:not(:last-child)
+{
+    margin-right: 10px;
+}
+.nav__menu-link
+{
+    text-decoration: none;
+
+    color: #000;
+}
+.nav__submenu
+{
+    margin-left: 10px;
+}
+.header
+{
+    width: 100vw;
+
+    border-bottom: 2px solid #000;
+}
+.main
+{
+    width: 100vw;
+
+    border-bottom: 2px solid #000;
+}
+.main_catalog
+{
+    width: 310px;
+}
+.main_catalog-image
+{
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+.main_catalog-link:hover > .main_catalog-image
+{
+    border: 3px solid #000;
+}
+.main_tovar-head
+{
+    font-size: 2em;
+}
+.main_tovar-headSecond
+{
+    font-size: 1.5em;
+    font-weight: 400;
+
+    color: #000;
+    background-color: #eaeaea;
+}
