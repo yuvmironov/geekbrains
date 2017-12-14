@@ -92,3 +92,25 @@ body
     color: #000;
     background-color: #eaeaea;
 }
+.main_tovar-shortDescription
+{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+
+    color: #707070;
+}
+.main_tovar-text
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #484343;
+}
+.main_tovar-list
+{
+    margin-left: 20px;
+
+    list-style-type: circle;
+}
