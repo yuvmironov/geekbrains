@@ -1,16 +1,36 @@
 .nav
-  width 100vw
-  border-bottom 1px solid #000
+  width 100%
   padding 10px 0
+  background-color: #ccc
+  position sticky
+  top 0
   &__wrapp
     max-width MaxWidth
     alignBlock()
   &__menu
+    font-size 1.5rem
     list-style none
+    display flex
+    justify-content flex-start
+    position relative
     &-item:not(:last-child)
       margin-right 10px
     &-link
       color #000
       text-decoration none
+      &:hover
+        text-decoration underline
+      &:hover + .nav__submenu
+        display flex
   &__submenu
+    border-top 1px solid #000
+    padding 5px
+    position absolute
+    top 25px
+    left 80px
+    background-color: #ccc
+    display none
+    flex-direction column
     margin-left 10px
+    &:hover
+      display flex

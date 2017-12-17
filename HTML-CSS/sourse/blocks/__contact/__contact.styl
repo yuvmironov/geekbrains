@@ -1,0 +1,51 @@
+.contact
+  &__wrapp
+    max-width MaxWidth
+    alignBlock()
+    display flex
+    flex-direction row-reverse
+    justify-content space-between
+    padding-top 10px
+    padding-bottom 10px
+  &__form
+    width 400px
+    font-size 1.4em
+    &-fild
+      padding 5px
+    &-input
+      width 100%
+      position relative
+    &-message
+      width: 90%;
+      height: 100px;
+      font-size: 1.2em;
+    &-legend, &-label, &-input
+      font-size 1.2em
+    &-group
+      position relative
+    &-place
+      display none
+      position absolute
+      top 2px
+      right 0
+      color #808080
+    &-input:focus + .contact__form-place, &-message:focus + .contact__form-place
+      display block
+    &-button
+      border 2px solid #696969
+      background-color: #cccccc
+      padding 5px
+      cursor pointer
+      transition 0.7s
+      &:hover
+        border 2px solid #ccc
+        background-color: #696969
+        color #fff
+        transition 0.7s
+  &__head
+    font-size 3em
+  &__label
+    font-size 2em
+  &__text
+    font-size 1.8em
+

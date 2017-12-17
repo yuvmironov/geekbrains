@@ -20,6 +20,15 @@ gulp.task('styl', function () {
     //.pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('stylToCss', function () {
+    gulp.src('sourse/blocks/site/index.styl')
+        .pipe(stylus())
+        .pipe(csscomb())
+        .pipe(rename('style.css'))
+        .pipe(gulp.dest('sourse/pre-relise'))
+    //.pipe(browserSync.reload({stream: true}))
+});
+
 gulp.task('preload', function () {
     gulp.src('sourse/blocks/__preload/__preload.styl')
         .pipe(stylus())

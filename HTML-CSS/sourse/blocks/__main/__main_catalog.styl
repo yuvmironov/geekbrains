@@ -1,8 +1,20 @@
 .main_catalog
-  width 310px
+  &-wrapp
+    max-width MaxWidth
+    alignBlock()
+    display flex
+    flex-wrap wrap
+    justify-content space-around
+    margin-top 10px
+    margin-bottom 10px
   &-image
-    border 3px solid #ccc
-    border-radius 10px
+      border 3px solid #ccc
+      border-radius 10px
   &-link
     &:hover > .main_catalog-image
       border 3px solid #000
+  &-head
+    font-size 2em
+  &-description
+    font-size 1.3em
+    padding-top 5px

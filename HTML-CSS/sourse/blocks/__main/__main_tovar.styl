@@ -1,8 +1,51 @@
 .main_tovar
   &-head
-    font-size 2em
-  &-headSecond
-    font-size 1.5em
-    color #000
-    font-weight 400
-    background-color #eaeaea
+    font-size 2.5em
+    margin-bottom 5px
+    margin-top 5px
+  &-info
+    display flex
+    justify-content flex-start
+  &-link
+    border 5px solid #ccc
+    margin-right 10px
+    border-radius 10px
+    &:hover
+      border-color #000
+  &-description
+    font-size 1.4em
+  &-secondHead
+    font-size 1.7em
+    font-style italic
+  &-text
+    font-size 1.4em
+  &-character
+    border-collapse collapse
+    width 40%
+    font-size 1.3em
+    & thead
+      background-color: red
+      text-align center
+      font-size 1.2em
+      font-weight bold
+      & tr th
+        border 1px solid #000
+    & tbody tr:nth-child(odd)
+      background-color: #ccc
+    & tbody tr td
+      border 1px solid #000
+  &-infoPeaple
+    font-size 1.3em
+    border-collapse collapse
+    width 40%
+    & caption
+      text-align right
+    & thead
+      background-color red
+      text-align center
+      font-size 1.2em
+      font-weight bold
+      & tr th
+        border 1px solid #000
+    & td
+      border 1px solid #000

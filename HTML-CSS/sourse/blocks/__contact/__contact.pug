@@ -1,0 +1,36 @@
+section.contact
+    .contact__wrapp
+        iframe(src="https://yandex.ru/map-widget/v1/-/CBa0YQvgwD" width="400" height="400" frameborder="0")
+        .contact__main
+            form.contact__form(action="")
+                fieldset.contact__form-fild
+                    legend.contact__form-legend Есть вопросы или предложения, пишите нам
+                    .contact__form-group
+                        label.contact__form-label(for="name") Ваше имя
+                        input.contact__form-input(type="text" id="name" name="name" placeholder="Ваше имя")
+                        p.contact__form-place.palce Ваше имя, только русские буквы
+                    .contact__form-group
+                        label.contact__form-label(for="mail") Ваш E-mail
+                        input.contact__form-input(type="mail" id="mail" name="mail" placeholder="Ваш E-mail")
+                        p.contact__form-place В формате aaaa@aaaa.ru
+                    .contact__form-group
+                        label.contact__form-label(for="them") Тема сообщения
+                        input.contact__form-input(type="text" id="them" name="them" placeholder="Тема сообщения")
+                        p.contact__form-place Тема письма, только русские буквы
+                    .contact__form-group
+                        label.contact__form-label(for="phone") Ваш телефон
+                        input.contact__form-input(type="tel" id="phone" name="phone" placeholder="Ваш телефон")
+                        p.contact__form-place Телефон в формате +7 (999) 999-99-99
+                    .contact__form-group
+                        label.contact__form-label(for="message") Ваш сообщение
+                        br
+                        textarea.contact__form-message(id="message" name="message" placeholder="Ваше сообщение")
+                        p.contact__form-place Подсказка
+                    input.contact__form-button(type="submit" name="sabmit" value="Отправить")
+        .contact__address
+            h2.contact__head Контакты
+            p.contact__label Телефон:&nbsp;
+                a.contact__link(href="tel:88008008080") 8 (800) 800-80-80
+            p.contact__label Почта:&nbsp;
+                a.contact__link(href="mailto:pochta@pochta.ru") pochta@pochta.ru
+            p.contact__text Тверская область

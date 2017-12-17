@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="John Doe">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="preload.css">
+  </head>
+  <body>
+    <div class="preload"><img class="preload__image" src="images/Global/Cube.svg"></div>
+    <nav class="nav">
+      <div class="nav__wrapp">
+        <menu class="nav__menu">
+          <li class="nav__menu-item"><a class="nav__menu-link" href="index.html">Главная</a></li>
+          <li class="nav__menu-item"><a class="nav__menu-link" href="catalog.html">Каталог</a>
+            <ul class="nav__menu nav__submenu">
+              <li class="nav__menu-item"><a class="nav__menu-link" href="broccoli.html">Капуста брокколи</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="cvetnaya.html">Цветная капуста</a></li>
+              <li class="nav__menu-item"><a class="nav__menu-link" href="belokachan.html">Капуста белокачанная</a></li>
+            </ul>
+          </li>
+          <li class="nav__menu-item"><a class="nav__menu-link" href="contact.html">Контакты</a></li>
+        </menu>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header__wrapp"><a class="header__link" href="/"><img class="header__image" src="images/Global/Logo.png"></a>
+        <h1 class="header__head">Магазин натуральных продукотов прямо с грядки</h1>
+      </div>
+    </header>
+    <section class="contact">
+      <div class="contact__wrapp">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBa0YQvgwD" width="400" height="400" frameborder="0"></iframe>
+        <div class="contact__main">
+          <form class="contact__form" action="">
+            <fieldset class="contact__form-fild">
+              <legend class="contact__form-legend">Есть вопросы или предложения, пишите нам</legend>
+              <div class="contact__form-group">
+                <label class="contact__form-label" for="name">Ваше имя</label>
+                <input class="contact__form-input" type="text" id="name" name="name" placeholder="Ваше имя">
+                <p class="contact__form-place palce">Ваше имя, только русские буквы</p>
+              </div>
+              <div class="contact__form-group">
+                <label class="contact__form-label" for="mail">Ваш E-mail</label>
+                <input class="contact__form-input" type="mail" id="mail" name="mail" placeholder="Ваш E-mail">
+                <p class="contact__form-place">В формате aaaa@aaaa.ru</p>
+              </div>
+              <div class="contact__form-group">
+                <label class="contact__form-label" for="them">Тема сообщения</label>
+                <input class="contact__form-input" type="text" id="them" name="them" placeholder="Тема сообщения">
+                <p class="contact__form-place">Тема письма, только русские буквы</p>
+              </div>
+              <div class="contact__form-group">
+                <label class="contact__form-label" for="phone">Ваш телефон</label>
+                <input class="contact__form-input" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
+                <p class="contact__form-place">Телефон в формате +7 (999) 999-99-99</p>
+              </div>
+              <div class="contact__form-group">
+                <label class="contact__form-label" for="message">Ваш сообщение</label><br>
+                <textarea class="contact__form-message" id="message" name="message" placeholder="Ваше сообщение"></textarea>
+                <p class="contact__form-place">Подсказка</p>
+              </div>
+              <input class="contact__form-button" type="submit" name="sabmit" value="Отправить">
+            </fieldset>
+          </form>
+        </div>
+        <div class="contact__address">
+          <h2 class="contact__head">Контакты</h2>
+          <p class="contact__label">Телефон:&nbsp;<a class="contact__link" href="tel:88008008080">8 (800) 800-80-80</a></p>
+          <p class="contact__label">Почта:&nbsp;<a class="contact__link" href="mailto:pochta@pochta.ru">pochta@pochta.ru</a></p>
+          <p class="contact__text">Тверская область</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapp">
+        <p class="footer__text">&#9400;&nbsp;Все права защищены</p>
+      </div>
+    </footer>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>
