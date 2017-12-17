@@ -18,7 +18,8 @@ caption,
 legend,
 fieldset
 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +31,8 @@ body
 }
 .nav
 {
-    position: sticky;
+    position: -webkit-sticky;
+    position:         sticky;
     top: 0;
 
     width: 100%;
@@ -50,10 +52,14 @@ body
 
     position: relative;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     list-style: none;
 
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 .nav__menu-item:not(:last-child)
@@ -72,6 +78,8 @@ body
 }
 .nav__menu-link:hover + .nav__submenu
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .nav__submenu
@@ -81,16 +89,22 @@ body
     left: 80px;
 
     display: none;
-    flex-direction: column;
+        flex-direction: column;
 
     margin-left: 10px;
     padding: 5px;
 
     border-top: 1px solid #000;
     background-color: #ccc;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
 }
 .nav__submenu:hover
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .header
@@ -98,10 +112,13 @@ body
     width: 100%;
 
     border-bottom: 2px solid #000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ccc), color-stop(62%, #fcfcfc), color-stop(66%, #fff));
     background: linear-gradient(to bottom, #ccc 0%, #fcfcfc 62%, #fff 66%);
 }
 .header__wrapp
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     max-width: 1200px;
@@ -109,7 +126,11 @@ body
     margin-left: auto;
     padding-top: 5px;
 
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .header__image
@@ -145,6 +166,8 @@ body
 }
 .main_catalog-wrapp
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     max-width: 1200px;
@@ -153,7 +176,9 @@ body
     margin-bottom: 10px;
     margin-left: auto;
 
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 .main_catalog-image
@@ -184,8 +209,12 @@ body
 }
 .main_tovar-info
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 .main_tovar-link
@@ -268,12 +297,46 @@ body
 }
 .main_tovar-infoPeaple td
 {
+    font-size: 1.1em;
+
     border: 1px solid #000;
+}
+.main_tovar-headSecond
+{
+    font-size: 1.5em;
+    font-weight: 400;
+
+    color: #000;
+    background-color: #eaeaea;
+}
+.main_tovar-shortDescription
+{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+
+    color: #707070;
+}
+.main_tovar-text
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    color: #484343;
+}
+.main_tovar-list
+{
+    margin-left: 20px;
+
+    list-style-type: circle;
 }
 .contact__wrapp
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+        flex-direction: row-reverse;
 
     max-width: 1200px;
     margin-right: auto;
@@ -281,6 +344,11 @@ body
     padding-top: 10px;
     padding-bottom: 10px;
 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .contact__form
@@ -336,14 +404,16 @@ body
     padding: 5px;
 
     cursor: pointer;
-    transition: .7s;
+    -webkit-transition: .7s;
+            transition: .7s;
 
     border: 2px solid #696969;
     background-color: #ccc;
 }
 .contact__form-button:hover
 {
-    transition: .7s;
+    -webkit-transition: .7s;
+            transition: .7s;
 
     color: #fff;
     border: 2px solid #ccc;
@@ -363,6 +433,7 @@ body
 }
 .footer
 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ccc), color-stop(62%, #fcfcfc), color-stop(66%, #fff));
     background: linear-gradient(to top, #ccc 0%, #fcfcfc 62%, #fff 66%);
 }
 .footer__wrapp
@@ -373,26 +444,4 @@ body
     margin-right: auto;
     margin-left: auto;
     padding: 10px 0;
-}
-.main_tovar-shortDescription
-{
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
-
-    color: #707070;
-}
-.main_tovar-text
-{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-
-    color: #484343;
-}
-.main_tovar-list
-{
-    margin-left: 20px;
-
-    list-style-type: circle;
 }
